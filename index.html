@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Grab-Uber Merger Survey</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Source+Sans+Pro" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+</head>
+
+<body>
+    <header>
+        <h1 id="title">Survey on Grab-Uber merger in Singapore</h1>
+        <p id="description">To facilitate and improve Singapore's private-hire car industry, we are conducting a survey on the Grab-Uber merger
+            in Singapore.</p>
+    </header>
+    <main>
+        <form id="survey-form">
+            <h2>Your details</h2>
+            <div id="detailsDiv">
+                <label for="name" id="name-label">Name</label>
+                <input id="name" type="text" placeholder="First & Last Name">
+                <br>
+                <label for="email" id="email-label">Email</label>
+                <input id="email" type="email" placeholder="name@email.com" required>
+                <br>
+                <label for="number" id="number-label">Phone Number</label>
+                <input id="number" type="number" placeholder="8765 4321" min="0" max="99999999" required>
+                <br>
+                <label for="dropdown">Age Range</label>
+                <select id="dropdown">
+                    <option value="below20">Below 20</option>
+                    <option value="20to30" selected>20-30</option>
+                    <option value="31to40">31-40</option>
+                    <option value="41to50">41-50</option>
+                    <option value="51to60">51-60</option>
+                    <option value="above60">Above 60</option>
+                </select>
+            </div>
+            <h2>Before the Grab-Uber merger, which modes of transport did you use most often?</h2>
+            <div id="transportDiv">
+                <input type="checkbox" id="grab" name="transport" value="grab">
+                <label for="grab">Grab</label>
+                <br>
+                <input type="checkbox" id="uber" name="transport" value="uber">
+                <label for="uber">Uber</label>
+                <br>
+                <input type="checkbox" id="mrt" name="transport" value="mrt" checked>
+                <label for="mrt">MRT</label>
+                <br>
+                <input type="checkbox" id="bus" name="transport" value="bus" checked>
+                <label for="bus">Bus</label>
+                <br>
+                <input type="checkbox" id="taxi" name="transport" value="taxi">
+                <label for="taxi">Taxi</label>
+                <br>
+                <input type="checkbox" id="others" name="transport" value="others">
+                <label for="others">Others / I drive my own car</label>
+            </div>
+            <h2>What do you think of the Grab-Uber merger?</h2>
+            <div id="opinionDiv">
+                <input type="radio" id="great" name="opinion" value="great" checked>
+                <label for="great">It has been great as I have always been a loyal fan of Grab.</label>
+                <br>
+                <input type="radio" id="bad" name="opinion" value="bad">
+                <label for="bad">Boohoo to the Grab monopoly and the potential price hike. However, I am still going to use private-hailing
+                    apps due to its convenience.</label>
+                <br>
+                <input type="radio" id="boycotting" name="opinion" value="boycotting">
+                <label for="boycotting">I'm boycotting private-hailing apps as I hate dynamic fares. Taxis and flat fares ftw!</label>
+            </div>
+            <label class="large-label" for="comments">Additional Comments</label>
+            <div id="commentsDiv">
+                <textarea name="comments" id="comments" placeholder="Any words of support or displeasure towards Grab's acquisition of Uber?"
+                    rows=10 cols=50></textarea>
+            </div>
+            <input id="submit" type="submit">
+        </form>
+    </main>
+    <footer><p>&copy Written and coded by Clarence Chan, 2018</p></footer>
+</body>
+
+</html>
